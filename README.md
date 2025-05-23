@@ -5,7 +5,7 @@ This repository contains a collection of projects showcasing my skills in HTML, 
 👨‍💻 All of my frontends projects are available at in this repository
 
 Languages and Tools used:
-HTML
-CSS
-TAILWIND CSS
+HTML,
+CSS,
+TAILWIND CSS,
 JAVASCRIPT
