@@ -1,11 +1,19 @@
-# -Fronted-Projects
+<h1 align="center">
+  🚀 Frontend Projects Collection
+</h1>
 
-This repository contains a collection of projects showcasing my skills in HTML, CSS, TailWind CSS and JavaScript. These projects demonstrate various frontend web development techniques, from creating static web pages to adding interactivity using some JavaScript in few slected project.Uses of css to designing and focusing of layout,structure and more.
+<p align="center">
+  A Simple collection of beginner to intermediate-level frontend projects built with
+  <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+</p>
 
-👨‍💻 All of my frontends projects are available at in this repository
+## 🛠️ Tech Stack
+<p align="center">
+  <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML Logo"/>
+  <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Logo"/>
+  <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript Logo"/>
+</p>
 
-Languages and Tools used:
-HTML,
-CSS,
-TAILWIND CSS,
-JAVASCRIPT
+- **HTML5** — Structure
+- **CSS3** — Styling (Flexbox, Grid, Media Queries)
+- **JavaScript** — Logic, DOM manipulation, APIs
