@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(70, 83, 224), #0033FF, #0000FF, #0000CC, black);
+}
+
+.allnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navbar ul {
+    width: 700px;
+    justify-content: space-between;
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+.thumsup {
+    font-size: 380px;
+    letter-spacing: -42px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mid {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    right: 615px;
+    top: 150px;
+}
+
+.thumimg{
+    position: absolute;
+    right: 615px;
+    top: 150px;
+    animation: thumsup 1s cubic-bezier(1, 0.99, 0.01, -0.01) 1;
+
+}
+@keyframes thumsup{
+    0%{
+        width: 0;
+    }
+/* 
+    50%{
+        width: 50%;
+    } */
+
+    100%{
+        width: 380px;
+    }
+}
+.ice {
+    top: 450px;
+    right: 620px;
+    /* animation: ice ; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: ice 4s cubic-bezier(1, 0.99, 0.01, -0.01) 1;
+}
+
+@keyframes ice {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 200px;
+        right: 620px;
+    }
+
+    50% {
+        top: 450px;
+        right: 620px;
+    }
+
+    75% {
+        top: 390px;
+        right: 620px;
+    }
+
+    100% {
+        top: 450px;
+        right: 620px;
+    }
+}
+
+
+.one {
+    left: 130px;
+    top: 170px;
+    opacity: 0.8;
+    filter: blur(5px);
+}
+
+.two {
+    right: 270px;
+    top: 400px;
+    opacity: 0.8;
+    filter: blur(5px);
+}
+
+.three {
+    left: 720px;
+    top: 130px;
+    opacity: 1;
+    animation: leaf3 3s cubic-bezier(1, 0.99, 0.01, -0.01) 1;
+}
+
+@keyframes leaf3 {
+    0% {
+        top: 0;
+    }
+
+    100%{
+        left: 720px;
+        top: 130px;
+    }
+}
+
+.four {
+    right: 130px;
+    top: 170px;
+    opacity: 1;
+    animation: leaf4 3s cubic-bezier(1, 0.99, 0.01, -0.01) 1;
+}
+
+@keyframes leaf4 {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    20% {
+        right: 90px;
+        top: 30px;
+    }
+
+    40% {
+        right: 170px;
+        top: 70px;
+    }
+
+    60% {
+        right: 100px;
+        top: 130px;
+    }
+
+    100% {
+        right: 130px;
+        top: 170px;
+    }
+
+}

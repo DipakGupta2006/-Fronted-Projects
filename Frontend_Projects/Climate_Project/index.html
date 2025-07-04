@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Climate Detector</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sunny">
+  <div class="container">
+    <div class="weather-icon" id="weather-icon">☀️</div>
+    <h1 id="weather-text">It's a Sunny Day</h1>
+    <button onclick="detectClimate()">Detect Climate</button>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Pulse | Real-time Weather Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-slider">
+        <div class="slide sunny active" style="background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="slide rainy" style="background-image: url('https://images.unsplash.com/photo-1438449805896-28a666819a20?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="slide cloudy" style="background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="slide snowy" style="background-image: url('https://images.unsplash.com/photo-1418985991508-e47386d96a71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Climate Pulse</h1>
+            <div class="search-container">
+                <input type="text" id="location-input" placeholder="Enter city or zip code...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="weather-card">
+                <div class="weather-info">
+                    <div class="location">
+                        <h2 id="city-name">New York</h2>
+                        <p id="current-date">Monday, June 10, 2023</p>
+                    </div>
+                    <div class="temperature">
+                        <span id="current-temp">24</span>
+                        <span class="degree">°C</span>
+                    </div>
+                    <div class="weather-condition">
+                        <i class="fas fa-sun weather-icon" id="weather-icon"></i>
+                        <p id="weather-desc">Sunny</p>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">65%</span>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind-speed">12 km/h</span>
+                        <p>Wind</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-compress-alt"></i>
+                        <span id="pressure">1012 hPa</span>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-days">
+                    <div class="forecast-day">
+                        <p>Mon</p>
+                        <i class="fas fa-sun"></i>
+                        <p>24°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Tue</p>
+                        <i class="fas fa-cloud-sun"></i>
+                        <p>22°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Wed</p>
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <p>19°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Thu</p>
+                        <i class="fas fa-cloud"></i>
+                        <p>21°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Fri</p>
+                        <i class="fas fa-sun"></i>
+                        <p>25°C</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2023 Climate Pulse | Real-time Weather Detection</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
