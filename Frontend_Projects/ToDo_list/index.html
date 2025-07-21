@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- <div class="center-box">
+        <h1>TODO LIST</h1>
+        
+        <div>
+            <input type="checkbox" class="things1" name="interest">LEARN C++
+            <button>remove</button>
+        </div>
+        
+        <p> <input type="checkbox" class="things2" name="interest">LEARN C</p>
+        <p> <input type="checkbox" class="things3" name="interest">LEARN ENGLISH</p>
+        <p> <input type="checkbox" class="things4" name="interest">LEARN React</p>
+        <p> <input type="checkbox" class="things5" name="interest">LEARN Python</p>
+        <p> <input type="checkbox" class="things6" name="interest">LEARN Java</p>
+        <p> <input type="checkbox" class="things7" name="interest">Exercise</p>
+
+
+        <hr>
+        <div class="btns">
+            <button class="btn">Add</button>
+            <button class="btn">Add</button>
+        </div>
+    </div> -->
+
+
+
+    <div class="center-box">
+        <h1 class="title">TODO LIST</h1>
+
+        <!-- ===== Todo items ===== -->
+        <ul id="todo-list">
+            <li class="todo-item item1">
+                <label> LEARN C++</label>
+                <button class="remove-btn rembtn1">Remove</button>
+            </li>
+            <li class="todo-item item2">
+                <label> LEARN C</label>
+                <button class="remove-btn rembtn2">Remove</button>
+            </li>
+            <li class="todo-item item3">
+                <label> LEARN ENGLISH</label>
+                <button class="remove-btn rembtn3">Remove</button>
+            </li>
+            <li class="todo-item item4">
+                <label> LEARN React</label>
+                <button class="remove-btn rembtn4">Remove</button>
+            </li>
+            <li class="todo-item item5">
+                <label>LEARN Python</label>
+                <button class="remove-btn rembtn5">Remove</button>
+            </li>
+           
+                <p class="output"></p>
+                
+            
+            <!-- <div class="output"></div> -->
+        </ul>
+
+        <hr />
+
+        <!-- ===== Add new task ===== -->
+        <div class="controls">
+            <input type="text" id="new-task" class="extra" placeholder="New task..." autocomplete="off" />
+            <button id="add-btn" class="btn extrabtn">Add</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
