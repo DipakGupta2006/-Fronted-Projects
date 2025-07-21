@@ -1,0 +1,100 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #74e1cd, #ACB6E5);
+      /* variant background */
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 500px;
+      height: 400px;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      /* box background variant */
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    input {
+      border: none;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      /* color: black; */
+      height: 25px;
+
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .userans {
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 2px solid rgba(255, 111, 145, 0.6);
+      border-radius: 8px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.85);
+      /* Thoda kam transparent */
+      color: #333;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      width: 250px;
+    }
+
+    /* Darker placeholder color for better visibility */
+    .userans::placeholder {
+      color: #d94f70;
+      /* Thoda dark pink */
+      opacity: 1;
+      /* Force full opacity */
+    }
+
+    .userans:focus {
+      border-color: #ff6f91;
+      box-shadow: 0 0 8px rgba(255, 111, 145, 0.5);
+      background-color: white;
+    }
+
+
+
+    .btn {
+      background-color: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent white */
+      color: #ff6f91;
+      /* Soft pinkish color matching #ff9a9e */
+      border: 2px solid #ff6f91;
+      /* Border matching text color */
+      padding: 8px 8px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(255, 111, 145, 0.3);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff6f91;
+      /* Pink background on hover */
+      color: white;
+      /* White text on hover */
+      box-shadow: 0 6px 15px rgba(255, 111, 145, 0.5);
+    }
+
+    .btn:active {
+      background-color: #e65b7e;
+      /* Slightly darker pink on click */
+      box-shadow: 0 2px 8px rgba(230, 91, 126, 0.7);
+    }
